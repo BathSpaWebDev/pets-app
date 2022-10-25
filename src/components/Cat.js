@@ -1,9 +1,11 @@
+import Button from './Button';
+
 function Cat(props) {
-    
     // const { name, colour, lackOfCommonSense } = props;
-  
+    
     const styles = {
-        backgroundColor: props.colour
+        backgroundColor: props.colour,
+        color: props.textColour
     }
 
     return (
@@ -20,8 +22,19 @@ function Cat(props) {
                 :
                 <p>I do have some common sense</p>
             }
+            <Button />
         </div>
     )
 } 
+
+
+// create a new component called ButtonComponent 
+// It should receive props for 
+//     - colour of button, 
+//     - textColour of the button
+//     - function to invert the colours
+
+// The button should invert the background colour of the the Cat div.
+
 
 export default Cat;
